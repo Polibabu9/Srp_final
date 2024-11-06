@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management with Dome Digester</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Waste Management with Dome Digester</h1>
+        <p>Transforming Waste into Energy for Sustainable Communities</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- How It Works Section -->
+        <section id="how-it-works">
+            <h2>How the Dome Digester Works</h2>
+            <p>The dome digester processes organic waste to produce biogas and compost, providing renewable energy and reducing landfill waste.</p>
+            <ul>
+                <li>Waste Collection</li>
+                <li>Anaerobic Digestion</li>
+                <li>Biogas Production</li>
+                <li>Compost Output</li>
+            </ul>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits">
+            <h2>Benefits</h2>
+            <div class="benefit-cards">
+                <div class="card">
+                    <h3>Reduces Landfill Waste</h3>
+                    <p>Decreases the amount of waste sent to landfills by converting it to energy and fertilizer.</p>
+                </div>
+                <div class="card">
+                    <h3>Produces Renewable Energy</h3>
+                    <p>Generates biogas which can be used as a fuel, reducing reliance on non-renewable resources.</p>
+                </div>
+                <div class="card">
+                    <h3>Improves Soil Quality</h3>
+                    <p>Produces compost, a natural fertilizer that enriches soil and promotes plant growth.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Graph Section -->
+        <section id="graphs">
+            <h2>Waste Management Analysis</h2>
+            <canvas id="dailyWasteGraph"></canvas>
+            <canvas id="reductionGraph"></canvas>
+        </section>
+        
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form" action="https://formspree.io/f/xdkogawa" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="thank-you" style="display: none; font-size: 1.2em; color: green;">
+                Thank you for your message! We'll get back to you shortly.
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Waste Management Initiative. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
